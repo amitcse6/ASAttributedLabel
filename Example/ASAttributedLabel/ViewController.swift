@@ -27,9 +27,12 @@ class ViewController: UIViewController {
         detailsLabel.numberOfLines = 0
         detailsLabel
             .setAttributes(attributes)
-            .setEvent { (attributeLabelIndex, attributeIndex, attribute) in
+            .setEvent { [weak self] (attributeLabelIndex, attributeIndex, attribute) in
                 if let value = attribute.value, value == "Signup" {
                     print("value: \(value)")
+                    let alert = UIAlertController(title: "Alert", message: value, preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                    self?.present(alert, animated: true, completion: nil)
                 }}
     }
     
