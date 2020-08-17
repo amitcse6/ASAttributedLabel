@@ -1,0 +1,27 @@
+PODS:
+  - ASAttributedLabel (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - ASAttributedLabel (from `../`)
+  - FBSnapshotTestCase (~> 2.1.4)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  ASAttributedLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ASAttributedLabel: da205d0ea7758423a603a80f3a062e6ddffe8f55
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: cc6150e385a41ca7c463dcf9aacd1ab698a37092
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,6 @@
+framework module ASAttributedLabel {
+  umbrella header "ASAttributedLabel-umbrella.h"
+
+  export *
+  module * { export * }
+}

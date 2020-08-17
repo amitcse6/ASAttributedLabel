@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import ASAttributedLabel
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var detailsLabel: ASAttributedLabel!
+    
+    private var attributes = [
+        ASAttribute(value: "You don't have an account ", type: .defaultAttr),
+        ASAttribute(value: "Signup", type: .markeAttr),
+        ASAttribute(value: "", attrs: [.font: UIFont.systemFont(ofSize: 16, weight: .black), .foregroundColor: UIColor.blue] as [NSAttributedString.Key : Any]),
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        detailsLabel.textAlignment = .center
+        detailsLabel.numberOfLines = 0
+        detailsLabel
+            .setAttributes(attributes)
+            .setEvent { (attributeLabelIndex, attributeIndex, attribute) in
+                if let value = attribute.value, value == "Signup" {
+                    print("value: \(value)")
+                }}
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
-

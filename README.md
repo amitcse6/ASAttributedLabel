@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/ASAttributedLabel.svg?style=flat)](https://cocoapods.org/pods/ASAttributedLabel)
 [![Platform](https://img.shields.io/cocoapods/p/ASAttributedLabel.svg?style=flat)](https://cocoapods.org/pods/ASAttributedLabel)
 
+Screenshots
+---------
+![ASAttributedLabel Screenshots](asattributedlabel_screenshot.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
