@@ -85,7 +85,8 @@ detailsLabel
 ```swift
 
 // use 'setEvents'
-    
+
+```
 
 ## Requirements
 
